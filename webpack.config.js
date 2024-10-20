@@ -14,7 +14,9 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    library: '@masteringjs/vuetensils',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
