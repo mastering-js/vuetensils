@@ -1,6 +1,9 @@
 {
   "name": "@masteringjs/vuetensils",
   "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "mocha": "10.x",
     "vue": "3.x",
