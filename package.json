@@ -1,0 +1,17 @@
+{
+  "name": "@masteringjs/vuetensils",
+  "version": "0.0.1",
+  "devDependencies": {
+    "mocha": "10.x",
+    "vue": "3.x",
+    "webpack": "5.95.0"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "node ./build",
+    "prepublishOnly": "npm run build"
+  }
+}
