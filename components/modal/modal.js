@@ -7,5 +7,12 @@ appendCSS(require('./modal.css'));
 
 module.exports = app => app.component('modal', {
   props: ['style'],
-  template
+  inheritAttrs: false,
+  template,
+  computed: {
+    attrsToBind() {
+      const attrs = { ...this.$attrs };
+      return attrs;
+    }
+  }
 });

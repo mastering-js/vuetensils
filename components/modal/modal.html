@@ -1,7 +1,7 @@
 <transition name="modal-RQ0iElEXKX8sS5sp">
   <div class="modal-mask-RQ0iElEXKX8sS5sp">
     <div class="modal-wrapper-RQ0iElEXKX8sS5sp">
-      <div class="modal-container-RQ0iElEXKX8sS5sp" :style="style ?? {}">
+      <div class="modal-container-RQ0iElEXKX8sS5sp" v-bind="attrsToBind">
         <div class="modal-close-RQ0iElEXKX8sS5sp" @click="$emit('close')">&times;</div>
         <div class="modal-body-RQ0iElEXKX8sS5sp">
           <slot></slot>
