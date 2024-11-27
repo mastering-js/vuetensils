@@ -23,6 +23,10 @@ module.exports = {
       {
         test: /\.html$/i,
         type: 'asset/source'
+      },
+      {
+        test: /\.css$/i,
+        type: 'asset/source'
       }
     ]
   }
