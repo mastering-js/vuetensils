@@ -1,0 +1,4 @@
+<button v-bind="attrsToBind" :disabled="isDisabled" @click="handleClick">
+  <div v-if="status == 'in_progress'" style="text-align: center"><img style="height: 1em" src="https://res.cloudinary.com/drfhhq8wu/image/upload/v1732812137/oegrpelubblxixtzfxq5.gif"></div>
+  <slot v-if="status == 'success' || status == 'init'"></slot>
+</button>
