@@ -5,7 +5,7 @@ const template = require('./modal.html');
 
 appendCSS(require('./modal.css'));
 
-module.exports = app => app.component('modal', {
+module.exports = {
   props: ['style'],
   inheritAttrs: false,
   template,
@@ -15,4 +15,4 @@ module.exports = app => app.component('modal', {
       return attrs;
     }
   }
-});
+};

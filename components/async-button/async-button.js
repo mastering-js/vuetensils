@@ -2,7 +2,7 @@
 
 const template = require('./async-button.html');
 
-module.exports = app => app.component('async-button', {
+module.exports = {
   data: () => ({
     status: 'init'
   }),
@@ -38,4 +38,4 @@ module.exports = app => app.component('async-button', {
       return this.status === 'in_progress' || this.$attrs.disabled;
     }
   }
-});
+};
